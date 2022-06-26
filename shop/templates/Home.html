@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title%} Home {% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <img class="img-fluid" src="{% static 'images/magazin.png'%}">
+    </div>
+</div>
+<div class="py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 mx-auto my-2 text-center">
+        <h1 class="text-capitalize font-weight-bold">Our Products</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    {% for i in 'aaaaaaaa'%}
+    <div class="col-9 mx-auto col-md-6 col-lg-3">
+<div class="card mb-5" style="width: 18rem;">
+  <img src="{% static 'images/beauty.png'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h5 class="text-info font-italic mb-2"> 34$ </h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  </div>
+  </div>
+  {% endfor%}
+</div>
+</div>
+
+{% endblock %}
